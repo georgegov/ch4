@@ -45,6 +45,10 @@ Python `argparse`
 - https://docs.python.org/3/howto/argparse.html
 - https://docs.python.org/3/library/argparse.html
 
-Other
+Pandas
+- https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html
+- https://pandas.pydata.org/docs/user_guide/10min.html
+
+Miscellaneous
 - https://stackoverflow.com/questions/606561/how-to-get-filename-of-the-main-module-in-python
   - To include the main module name in error messages related to custom argument parsing checks (e.g. if month specified, year is required), to match `argparse` behavior

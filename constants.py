@@ -1,4 +1,4 @@
-FUNCTION_NAME = 'function_name'
+FUNCTION_NAME = 'function-name'
 DAYS_OF_PRECIP = 'days-of-precip'
 MAX_TEMP_DELTA = 'max-temp-delta'
 

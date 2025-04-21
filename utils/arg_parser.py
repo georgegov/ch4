@@ -11,7 +11,7 @@ def parse_args():
     f"""
     Parse command-line arguments
     :return:
-       dict with key-value pairs for: {FUNCTION_NAME}, {CITY}, {YEAR}, {MONTH}
+       dict with key-value pairs for keys: {FUNCTION_NAME}, {CITY}, {YEAR}, {MONTH}
     """
     parser = argparse.ArgumentParser()
     parser.add_argument(f'{FUNCTION_NAME}', choices=[DAYS_OF_PRECIP, MAX_TEMP_DELTA])
