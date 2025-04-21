@@ -23,7 +23,19 @@ def average_annual_days_of_precipitation(city):
 
 
 def greatest_daily_temp_change(city, year, month):
-    pass
+    df['TDELTA'] = df['TMAX'] - df['TMIN']
+    df['YEAR'] = pd.to_datetime(df['DATE']).dt.year
+    df['MONTH'] = pd.to_datetime(df['DATE']).dt.month
+
+    df_filtered = df.loc[df['NAME'] == CITY_TO_NOAA_NAME[city]]
+
+    if year is not None:
+        df_filtered = df_filtered.loc[df['YEAR'] == year]
+
+    if month is not None:
+        df_filtered = df_filtered.loc[df['MONTH'] == month]
+
+    print(round(max(df_filtered['TDELTA']), 1))
 
 
 args = arg_parser.parse_args()
@@ -32,9 +44,6 @@ try:
     df = pd.read_csv(INPUT_CSV_FILE)
 except Exception:
     sys.exit(f'Error: could not read CSV file: {INPUT_CSV_FILE}')
-
-# TODO: Remove this
-print(args)
 
 if args[FUNCTION_NAME] == DAYS_OF_PRECIP:
     average_annual_days_of_precipitation(args[CITY])

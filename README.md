@@ -48,6 +48,8 @@ Python `argparse`
 Pandas
 - https://pandas.pydata.org/docs/getting_started/intro_tutorials/index.html
 - https://pandas.pydata.org/docs/user_guide/10min.html
+- https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.to_datetime.html
+- https://pandas.pydata.org/pandas-docs/stable/reference/series.html#api-series-dt
 
 Miscellaneous
 - https://stackoverflow.com/questions/606561/how-to-get-filename-of-the-main-module-in-python
