@@ -35,7 +35,7 @@ def greatest_daily_temp_change(city, year, month):
     if month is not None:
         df_filtered = df_filtered.loc[df['MONTH'] == month]
 
-    print(round(max(df_filtered['TDELTA']), 1))
+    print(round(df_filtered['TDELTA'].max(), 1))
 
 
 args = arg_parser.parse_args()
